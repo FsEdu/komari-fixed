@@ -1,4 +1,4 @@
-FROM jyucoeng/komari:latest
+FROM ghcr.io/jyucoeng/komari:latest
 USER root
 RUN apt-get update && apt-get install -y --no-install-recommends busybox || apk add --no-cache busybox
 RUN cp /app/restore.sh /app/restore-manual.sh
